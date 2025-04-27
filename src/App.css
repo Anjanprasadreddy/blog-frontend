@@ -55,6 +55,7 @@ form input, form textarea {
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
+  padding-right: 0px;
 }
 
 button {
@@ -78,4 +79,45 @@ button:hover {
   padding: 15px;
   margin-bottom: 20px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* VerifyEmail.css */
+
+/* Center the content vertically and horizontally */
+.verify-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4; /* Light background color */
+  font-family: Arial, sans-serif;
+}
+
+/* The box around the verification message */
+.verify-box {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Heading style */
+.verify-box h2 {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Success message */
+.verify-success {
+  color: #4caf50;
+}
+
+/* Error message */
+.verify-error {
+  color: #f44336;
 }

@@ -4,8 +4,9 @@ import Login from './pages/Login.js';
 import Register from './pages/Register.js';
 import Home from './pages/Home.js';
 import Blogs from './pages/Blogs.js';
-import Navbar from './components/Navbar.js';
+import Navbar from './components/Navbar.jsx';
 import AdminAccess from './pages/AdminAccess.js'
+import VerifyEmail from './components/VerifyEmail.jsx';
 import SingleBlog from './pages/SingleBlog.js'; // Import SingleBlog
 import './App.css';
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/access" element={<AdminAccess />} />
         <Route path="/blog/:id" element={<SingleBlog />} /> {/* Add route for SingleBlog */}
+        <Route path="/verify"  element={<VerifyEmail/>} />
       </Routes>
     </Router>
   );

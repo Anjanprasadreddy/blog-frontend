@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import API from '../api/api';
-import BlogCard from '../components/BlogCard';
+import BlogCard from '../components/BlogCard.jsx';
 
 function Blogs() {
   const [blogs, setBlogs] = useState([]);
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
-  const navigate = useNavigate();
   const fetchBlogs = async () => {
     try {
       const res = await API.get('/blogs');
